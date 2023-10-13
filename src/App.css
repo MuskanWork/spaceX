@@ -36,3 +36,183 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.filters {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.success-button {
+  background-color: #4CAF50; 
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.success-button.active,
+.year-button.active {
+  background-color: #006400; 
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filter {
+  margin: 10px;
+}
+
+h2 {
+  margin: 0;
+}
+
+label {
+  margin-left: 5px;
+}
+
+.program-list {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+}
+
+li img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+li h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+@media (max-width: 700px) {
+  .filter {
+    width: 100%;
+  }
+  li {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  .app {
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start; 
+  }
+
+  .filters {
+    width: 20%; 
+    margin-right: 20px; 
+    height: max-content;
+  }
+
+  .program-list { 
+   width: 80%;
+   }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start
+  }
+
+  li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    flex-basis: calc(25% - 20px);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .app {
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start; 
+  }
+
+  .filters {
+    width: 20%; 
+    margin-right: 20px; 
+    height: max-content;
+  }
+
+  .program-list { 
+   width: 80%;
+   }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start
+  }
+
+  li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    flex-basis: calc(25% - 20px);
+  }
+}
+
+.year-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.year-button {
+  background-color: #4CAF50; 
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.year-button.active {
+  background-color: #006400; 
+}
+
+
+
+
+
